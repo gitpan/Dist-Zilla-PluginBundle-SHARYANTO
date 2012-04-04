@@ -1,0 +1,50 @@
+{
+   "abstract" : "Dist::Zilla like SHARYANTO when you build your dists",
+   "author" : [
+      "Steven Haryanto <stevenharyanto@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-PluginBundle-SHARYANTO",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla" : 0,
+            "Dist::Zilla::Plugin::CheckChangeLog" : 0,
+            "Dist::Zilla::Plugin::InstallRelease" : 0,
+            "Dist::Zilla::Plugin::OurPkgVersion" : 0,
+            "Dist::Zilla::Plugin::PodWeaver" : 0,
+            "Dist::Zilla::Plugin::ReadmeFromPod" : 0,
+            "Dist::Zilla::Plugin::Run::Release" : 0,
+            "Dist::Zilla::Plugin::TaskWeaver" : 0,
+            "Dist::Zilla::Plugin::Test::Compile" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://search.cpan.org/dist/Dist-Zilla-PluginBundle-SHARYANTO/",
+      "repository" : {
+         "url" : "http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-SHARYANTO"
+      }
+   },
+   "version" : "0.01"
+}
+
