@@ -1,4 +1,4 @@
-package Dist::Zilla::PluginBundle::SHARYANTO::Task;
+package Dist::Zilla::PluginBundle::SHARYANTO::Task::Private;
 
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
@@ -11,19 +11,15 @@ sub configure {
     my $self = shift;
 
     $self->add_bundle(Filter => {
-        -bundle => '@SHARYANTO',
-        -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver/],
+        -bundle => '@SHARYANTO::Task',
+        -remove => [qw/ConfirmRelease UploadToCPAN/],
     });
-
-    $self->add_plugins(
-        'TaskWeaver',
-    );
 }
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
-# ABSTRACT: Dist::Zilla like SHARYANTO when you build your task dists
+# ABSTRACT: Dist::Zilla like SHARYANTO when you build your private task dists
 
 
 __END__
@@ -31,7 +27,7 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::PluginBundle::SHARYANTO::Task - Dist::Zilla like SHARYANTO when you build your task dists
+Dist::Zilla::PluginBundle::SHARYANTO::Task::Private - Dist::Zilla like SHARYANTO when you build your private task dists
 
 =head1 VERSION
 
@@ -40,17 +36,14 @@ version 0.02
 =head1 SYNOPSIS
 
  # dist.ini
- [@SHARYANTO::Task]
+ [@SHARYANTO::Task::Private]
 
 is equivalent to:
 
  [@Filter]
- bundle=@SHARYANTO
- remove=PodCoverageTests
- remove=PodSyntaxTests
- remove=PodWeaver
-
- [TaskWeaver]
+ bundle=@SHARYANTO::Task
+ remove=ConfirmRelease
+ remove=UploadToCPAN
 
 =head1 DESCRIPTION
 

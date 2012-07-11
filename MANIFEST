@@ -8,7 +8,9 @@ META.yml
 README
 dist.ini
 lib/Dist/Zilla/PluginBundle/SHARYANTO.pm
+lib/Dist/Zilla/PluginBundle/SHARYANTO/Private.pm
 lib/Dist/Zilla/PluginBundle/SHARYANTO/Task.pm
+lib/Dist/Zilla/PluginBundle/SHARYANTO/Task/Private.pm
 t/00-compile.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
