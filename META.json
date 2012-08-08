@@ -28,13 +28,16 @@
          "requires" : {
             "Dist::Zilla" : 0,
             "Dist::Zilla::Plugin::CheckChangeLog" : 0,
+            "Dist::Zilla::Plugin::Extras" : 0,
             "Dist::Zilla::Plugin::InstallRelease" : 0,
             "Dist::Zilla::Plugin::OurPkgVersion" : 0,
             "Dist::Zilla::Plugin::PodWeaver" : 0,
             "Dist::Zilla::Plugin::ReadmeFromPod" : 0,
             "Dist::Zilla::Plugin::Run::Release" : 0,
             "Dist::Zilla::Plugin::TaskWeaver" : 0,
-            "Dist::Zilla::Plugin::Test::Compile" : 0
+            "Dist::Zilla::Plugin::Test::Compile" : 0,
+            "Pod::Weaver::Plugin::Perinci" : 0,
+            "Pod::Weaver::Section::Changes" : 0
          }
       }
    },
@@ -45,6 +48,6 @@
          "url" : "http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-SHARYANTO"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

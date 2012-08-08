@@ -16,6 +16,7 @@ name: Dist-Zilla-PluginBundle-SHARYANTO
 requires:
   Dist::Zilla: 0
   Dist::Zilla::Plugin::CheckChangeLog: 0
+  Dist::Zilla::Plugin::Extras: 0
   Dist::Zilla::Plugin::InstallRelease: 0
   Dist::Zilla::Plugin::OurPkgVersion: 0
   Dist::Zilla::Plugin::PodWeaver: 0
@@ -23,7 +24,9 @@ requires:
   Dist::Zilla::Plugin::Run::Release: 0
   Dist::Zilla::Plugin::TaskWeaver: 0
   Dist::Zilla::Plugin::Test::Compile: 0
+  Pod::Weaver::Plugin::Perinci: 0
+  Pod::Weaver::Section::Changes: 0
 resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-PluginBundle-SHARYANTO/
   repository: http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-SHARYANTO
-version: 0.02
+version: 0.03

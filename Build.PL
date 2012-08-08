@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-SHARYANTO",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::SHARYANTO",
   "recommends" => {},
@@ -25,13 +25,16 @@ my %module_build_args = (
   "requires" => {
     "Dist::Zilla" => 0,
     "Dist::Zilla::Plugin::CheckChangeLog" => 0,
+    "Dist::Zilla::Plugin::Extras" => 0,
     "Dist::Zilla::Plugin::InstallRelease" => 0,
     "Dist::Zilla::Plugin::OurPkgVersion" => 0,
     "Dist::Zilla::Plugin::PodWeaver" => 0,
     "Dist::Zilla::Plugin::ReadmeFromPod" => 0,
     "Dist::Zilla::Plugin::Run::Release" => 0,
     "Dist::Zilla::Plugin::TaskWeaver" => 0,
-    "Dist::Zilla::Plugin::Test::Compile" => 0
+    "Dist::Zilla::Plugin::Test::Compile" => 0,
+    "Pod::Weaver::Plugin::Perinci" => 0,
+    "Pod::Weaver::Section::Changes" => 0
   },
   "script_files" => []
 );
