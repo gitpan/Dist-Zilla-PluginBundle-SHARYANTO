@@ -3,7 +3,7 @@ NAME
     you build your dists
 
 VERSION
-    version 0.03
+    version 0.04
 
 SYNOPSIS
      # dist.ini
@@ -25,6 +25,7 @@ SYNOPSIS
      [PodWeaver]
      [ReadmeFromPod]
      [Test::Compile]
+     [Test::Rinci]
 
      [InstallRelease]
      install_command=cpanm -n .

@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -23,6 +23,7 @@ sub configure {
         'PodWeaver',
         'ReadmeFromPod',
         'Test::Compile',
+        'Test::Rinci',
         [InstallRelease => {install_command => 'cpanm -n .'}],
         ['Run::Release' => {run => 'archive-perl-release %s'}],
     );
@@ -43,7 +44,7 @@ Dist::Zilla::PluginBundle::SHARYANTO - Dist::Zilla like SHARYANTO when you build
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -66,6 +67,7 @@ is equivalent to:
  [PodWeaver]
  [ReadmeFromPod]
  [Test::Compile]
+ [Test::Rinci]
 
  [InstallRelease]
  install_command=cpanm -n .

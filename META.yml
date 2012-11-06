@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
+generated_by: 'Dist::Zilla version 4.300015, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,9 +24,9 @@ requires:
   Dist::Zilla::Plugin::Run::Release: 0
   Dist::Zilla::Plugin::TaskWeaver: 0
   Dist::Zilla::Plugin::Test::Compile: 0
+  Dist::Zilla::Plugin::Test::Rinci: 0
   Pod::Weaver::Plugin::Perinci: 0
-  Pod::Weaver::Section::Changes: 0
 resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-PluginBundle-SHARYANTO/
   repository: http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-SHARYANTO
-version: 0.03
+version: 0.04

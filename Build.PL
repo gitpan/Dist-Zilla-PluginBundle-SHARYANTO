@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Dist-Zilla-PluginBundle-SHARYANTO",
-  "dist_version" => "0.03",
+  "dist_version" => "0.04",
   "license" => "perl",
   "module_name" => "Dist::Zilla::PluginBundle::SHARYANTO",
   "recommends" => {},
@@ -33,8 +33,8 @@ my %module_build_args = (
     "Dist::Zilla::Plugin::Run::Release" => 0,
     "Dist::Zilla::Plugin::TaskWeaver" => 0,
     "Dist::Zilla::Plugin::Test::Compile" => 0,
-    "Pod::Weaver::Plugin::Perinci" => 0,
-    "Pod::Weaver::Section::Changes" => 0
+    "Dist::Zilla::Plugin::Test::Rinci" => 0,
+    "Pod::Weaver::Plugin::Perinci" => 0
   },
   "script_files" => []
 );
