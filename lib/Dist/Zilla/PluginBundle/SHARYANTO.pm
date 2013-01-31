@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -47,7 +47,7 @@ Dist::Zilla::PluginBundle::SHARYANTO - Dist::Zilla like SHARYANTO when you build
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -91,13 +91,15 @@ C<archive-perl-release> is a script on my computer, you can get them from my
 'scripts' github repo but the release process won't fail if the script does not
 exist.
 
+=for Pod::Coverage ^(configure)$
+
 =head1 AUTHOR
 
 Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Steven Haryanto.
+This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
