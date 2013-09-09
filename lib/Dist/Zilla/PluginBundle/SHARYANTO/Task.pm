@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::SHARYANTO::Task;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.08'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -35,7 +35,7 @@ Dist::Zilla::PluginBundle::SHARYANTO::Task - Dist::Zilla like SHARYANTO when you
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 

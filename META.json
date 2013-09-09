@@ -14,14 +14,9 @@
    },
    "name" : "Dist-Zilla-PluginBundle-SHARYANTO",
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Module::Build" : "0.3601"
-         }
-      },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "develop" : {
@@ -57,6 +52,6 @@
          "url" : "http://github.com/sharyanto/perl-Dist-Zilla-PluginBundle-SHARYANTO"
       }
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }
 
