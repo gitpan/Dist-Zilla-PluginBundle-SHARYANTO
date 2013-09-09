@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::SHARYANTO::Private;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -21,8 +21,8 @@ no Moose;
 1;
 # ABSTRACT: Dist::Zilla like SHARYANTO when you build your private dists
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -31,7 +31,7 @@ Dist::Zilla::PluginBundle::SHARYANTO::Private - Dist::Zilla like SHARYANTO when 
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -61,4 +61,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

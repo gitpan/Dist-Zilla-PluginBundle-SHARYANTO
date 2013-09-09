@@ -3,7 +3,7 @@ package Dist::Zilla::PluginBundle::SHARYANTO;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
 
@@ -12,13 +12,12 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Classic',
-        -remove => [qw/MakeMaker PkgVersion PodVersion Readme/],
+        -remove => [qw/PkgVersion PodVersion Readme/],
     });
 
     $self->add_plugins(
         'CheckChangeLog',
         'MetaJSON',
-        'ModuleBuild',
         'OurPkgVersion',
         'PodWeaver',
         'ReadmeFromPod',
@@ -37,8 +36,8 @@ no Moose;
 1;
 # ABSTRACT: Dist::Zilla like SHARYANTO when you build your dists
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -47,7 +46,7 @@ Dist::Zilla::PluginBundle::SHARYANTO - Dist::Zilla like SHARYANTO when you build
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -58,14 +57,12 @@ is equivalent to:
 
  [@Filter]
  bundle=@Classic
- remove=MakeMaker
  remove=PkgVersion
  remove=PodVersion
  remove=Readme
 
  [CheckChangeLog]
  [MetaJSON]
- [ModuleBuild]
  [OurPkgVersion]
  [PodWeaver]
  [ReadmeFromPod]
@@ -105,4 +102,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
