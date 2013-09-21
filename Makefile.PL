@@ -30,12 +30,16 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::Plugin::Rinci::Validate" => "0.01",
     "Dist::Zilla::Plugin::Run::Release" => 0,
     "Dist::Zilla::Plugin::TaskWeaver" => 0,
-    "Dist::Zilla::Plugin::Test::Compile" => 0,
+    "Dist::Zilla::Plugin::Test::Compile" => "2.033",
     "Dist::Zilla::Plugin::Test::Rinci" => "0.01",
     "Pod::Weaver::Plugin::Perinci" => 0
   },
-  "TEST_REQUIRES" => {},
-  "VERSION" => "0.08",
+  "TEST_REQUIRES" => {
+    "Capture::Tiny" => 0,
+    "Test::More" => "0.88",
+    "blib" => 0
+  },
+  "VERSION" => "0.09",
   "test" => {
     "TESTS" => "t/*.t"
   }
